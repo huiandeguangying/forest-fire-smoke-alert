@@ -56,30 +56,16 @@ class fire(QMainWindow):
         self.right_layout = QGridLayout()
         self.right_widget.setLayout(self.right_layout)
 
-        self.main_layout.addWidget(self.left_widget,0,0,8,6,Qt.AlignRight) # 左侧部件在第0行第3列，占8行9列
-        # self.main_layout.addWidget(self.middle_widget,0,7,8,4) # 中间部件在第0行第0列，占8行3列
-        self.main_layout.addWidget(self.right_widget,0,6,8,6) # 右侧部件在第0行第3列，占8行9列
-        
-        
-        
+        self.main_layout.addWidget(self.left_widget,0,0,8,6,Qt.AlignRight) # 左侧部件
+        self.main_layout.addWidget(self.right_widget,0,6,8,6) # 右侧部件     
         
         self.setCentralWidget(self.main_widget) # 设置窗口主部件
-        # columns = 5  # 假设有5列
-        # for i in range(columns):
-        #     self.main_layout.setColumnStretch(i, 1)
-
-        # self.main_layout.setColumnStretch(0, 1)
-        # self.main_layout.setColumnStretch(6, 1)
         
-
         # 添加一个按钮
         self.btn_1 = QPushButton(qtawesome.icon('ei.picture',color='black'),"选择图片")
         self.btn_1.setObjectName('left_button')
         self.btn_1.clicked.connect(self.select_image)
         self.btn_1.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
-
-
-        
 
         # 添加一个按钮
         self.btn_2 = QPushButton(qtawesome.icon('ei.folder-open',color='yellow'),"存放路径")

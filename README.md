@@ -8,3 +8,4 @@
   ![image0](https://github.com/user-attachments/assets/bf6be8e6-6f71-4a32-ad08-03b3d8b6d03d)  
 
   其中打开摄像可以开启安装在树莓派4b上的摄像头，实现实时推理，推理帧数稳定在2~3fps之间。
+  ![image](https://github.com/user-attachments/assets/40d4dc28-69aa-40f4-8103-21acd2f9f4ba)
